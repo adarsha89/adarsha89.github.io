@@ -10,6 +10,12 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color:aquamarine;
+            color: black;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
         }
         .container {
             max-width: 800px;
@@ -33,20 +39,39 @@
         }
     </style>
 </head>
-<body>
+<body>   
     <div class="container">
+        <div class="photo">
+            <img src="https://media.licdn.com/dms/image/D5603AQGK5CHuikGw3g/profile-displayphoto-shrink_200_200/0/1692596662849?e=1713398400&v=beta&t=6h6Fd0RDCZW5ZqnrqWAx_DpDEDslLarTZodbvY028zs" alt="Adarsha Shetty">
+        </div>
+        <div class="heading">
+            <h1>Adarsha Shetty</h1>
+            <h2>Software Engineer</h2>
+        </div>
         <div class="contact-info">
+            <br>
             <h2>Contact</h2>
-            <p>8762485336 (Mobile)</p>
+            <p>+918762485336 (Mobile)</p>
             <p>adarsha.shetty.1989@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/adarsha-shetty-56842463">LinkedIn</a></p>
+            <h2><a href="https://www.linkedin.com/in/adarsha-shetty-56842463" style="color: yellow;">LinkedIn Profile</a></h2>
         </div>
         <div class="skills">
             <h2>Top Skills</h2>
             <ul>
                 <li>Test architecture</li>
-                <li>Test Automation</li>
+                <li>Test Automation (UI, API, Performance, Visual, Accessibility)</li>
                 <li>Quality Engineering</li>
+                <li>Coding</li>
+                <li>CI/CD</li>
+            </ul>
+        </div>
+        <div class="languages">
+            <h2>Programming languages</h2>
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Ruby</li>
             </ul>
         </div>
         <div class="summary">
@@ -62,7 +87,7 @@
             <h3>Senior Software Development Engineer in Test at HackerRank</h3>
             <p>Bengaluru, Karnataka, India</p>
             <p>January 2020 - July 2022 (2 years 7 months)</p>
-            <p>Software Development Engineer in Test at HackerRank</p>
+            <h3>Software Development Engineer in Test at HackerRank</h3>
             <p>Bengaluru, Karnataka, India</p>
             <p>June 2015 - January 2020 (4 years 8 months)</p>
             <p>I worked on design and creation of automated test cases using Selenium Webdriver, Maven and TestNG. I was also involved in the creation of similar testcases using Cucumber and Ruby language.</p>
@@ -74,16 +99,25 @@
                 <li>Was involved in setting up automation on the cloud using virtual displays.</li>
             </ol>
             <h3>QA Automation Engineer at Sapient Global Markets</h3>
+            <p>Bengaluru, Karnataka, India</p>
             <p>March 2012 - June 2015 (3 years 4 months)</p>
-            <p>I have worked on creation of Test Scenarios, Test Cases and Test Scripts and was actively involved in estimation of required efforts and highlighting the risks in the Testing process. I have experience in Test Automation, debugging and analysis from Reports and Logs generated during automation.</p>
+            <p>I worked on creation of Test Scenarios, Test Cases and Test Scripts and was actively involved in estimation of required efforts and highlighting the risks in the Testing process. I have experience in Test Automation, debugging and analysis from Reports and Logs generated during automation.</p>
         </div>
         <div class="education">
             <h2>Education</h2>
-            <p>PES Institute Of Technology</p>
+            <h3>PES Institute Of Technology</h3>
             <p>Bachelor of Engineering (B.E.), Electronics and Communications Engineering · (2007 - 2011)</p>
-            <p>PES Institute Of Technology</p>
-            <p>B.E, ECE · (2007 - 2011)</p>
+        </div>
+        <div class="footer">
+            <br/>        
+            <button onclick="myFunction()">Toggle dark/light mode</button><p><i>Click above to toggle between dark and light mode</i></p>
         </div>
     </div>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
